@@ -76,17 +76,7 @@ pip install -r requirements.txt
 复制环境变量模板并填入您的 DashScope API Key：
 
 ```bash
-# Windows
-copy .env.example .env
-
-# Linux/macOS
-cp .env.example .env
-```
-
-
-编辑 `.env` 文件：
-```env
-DASHSCOPE_API_KEY=your_actual_api_key_here
+$env:DASHSCOPE_API_KEY="your_api_key_here"
 ```
 
 
@@ -150,8 +140,7 @@ langchain-agent-master/
 │   ├── chat_sessions.json          # 会话历史
 │   └── knowledge_manifest.json     # 知识文档清单
 ├── logs/                           # 日志目录
-├── requirements.txt                # Python 依赖
-├── .env.example                    # 环境变量模板
+├── requirements.txt                # Python 依赖     
 └── README.md                       # 项目说明文档
 ```
 
@@ -271,24 +260,8 @@ langchain-agent-master/
 所有运行日志保存在 `logs/` 目录下，按日期命名：
 ```
 logs/
-├── agent_20260415182958.log
-├── agent_20260415183526.log
+├── agent_20260415.log
+├── agent_20260415.log
 └── agent_20260417.log
 ```
 
-
-## 🤝 贡献指南
-
-欢迎提交 Issue 和 Pull Request！
-
-## 📄 许可证
-
-本项目仅供学习和研究使用。
-
-## 📧 联系方式
-
-如有问题或建议，请通过 Issue 反馈。
-
----
-
-**祝您使用愉快！**
